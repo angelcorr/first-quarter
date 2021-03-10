@@ -12,7 +12,9 @@ html {
   text-align: center;
   width: 100%;
   height: 100%;
-  background-image: url(./wallpaper.jpg);
+  background-image: url("./wallpaper.jpg");
+  min-width: 500px;
+  min-height: 500px;
 }
 
 main {
@@ -20,16 +22,45 @@ main {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  align-items: center;
   width: 100%;
+  height: auto;
+  padding: 3px;
   color: black;
 }
 
+.pages {
+  display: grid;
+  grid-template: repeat(6, 80px) / repeat(6, 80px);
+  height: fit-content;
+}
+
 h1 {
-  padding: 10px;
+  padding: 4px;
 }
 
 h2 {
-  padding: 10px;
+  padding: 4px;
+}
+
+.e-commerce {
+  grid-area: 1 / 1 / span 2 / span 2;
+}
+
+.e-commerce p {
+  text-align: center;
+  justify-content: center;
+}
+
+.social {
+  grid-area: 1 / 5 / span 2 / span 2;
+}
+
+.pinterest {
+  grid-area: 4 / 3 / span 2 / span 2;
+  flex-direction: row;
+  text-align: center;
+  justify-items: center;
 }
 
 a {
@@ -43,12 +74,22 @@ a:hover {
 }
 
 footer {
+  align-content: center;
   font-weight: bold;
-  text-align: center;
+  text-align: start;
   font-size: 15px;
   color: black;
-  width: 1300px;
-  padding: 25px;
-  margin: 0 auto;
-  height: 100px;
+  width: 100%;
+  height: .5rem;
+  position: relative;
+  top: 2.4rem;
 }
+
+p[class^="contact"]::before {
+  content: "📞 ";
+}
+
+p[class^="address"]::before {
+  content: "📍 ";
+}
+
