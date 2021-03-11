@@ -57,7 +57,7 @@ h2 {
 }
 
 .pinterest {
-  grid-area: 4  / 3 / span 2 / span 2;
+  grid-area: 4 / 3 / span 2 / span 2;
   flex-direction: row;
   text-align: center;
   justify-items: center;
