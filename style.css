@@ -57,7 +57,7 @@ h2 {
 }
 
 .pinterest {
-  grid-area: 4 / 3 / span 2 / span 2;
+  grid-area: 4  / 3 / span 2 / span 2;
   flex-direction: row;
   text-align: center;
   justify-items: center;
@@ -85,11 +85,11 @@ footer {
   top: 2.4rem;
 }
 
-p[class^="contact"]::before {
+p.contact::before {
   content: "📞 ";
 }
 
-p[class^="address"]::before {
+p.address::before {
   content: "📍 ";
 }
 
