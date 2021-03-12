@@ -1,0 +1,316 @@
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensanscondensed/v15/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMRw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/juliussansone/v9/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsX.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+  min-width: 300px;
+  min-height: 400px;
+}
+
+a {
+  transition: color .2s linear;
+}
+
+a:hover {
+  color: white
+}
+
+a {
+  color: inherit;
+}
+
+nav h3 {
+  color: #FFE1A8;
+  padding: 10px;
+  font-size: 15px;
+  font-family: 'Open Sans Condensed';
+  font-size: large;
+}
+
+h3.email {
+  display: inline-flex;
+  text-align: start;
+  font-size: 15px;
+}
+
+h3.coin {
+  display: inline-flex;
+  text-align: center;
+  font-size: 15px;
+}
+
+h3.account {
+  display: inline-flex;
+  text-align: end;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-family: 'Open Sans Condensed';
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: inline-flex;
+  font-family: 'Julius Sans One';
+  color: #5f0f40;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #5f0f40;
+  border-radius: 1rem;
+  margin: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 90px;
+  background-color: white;
+}
+
+h3.sizes {
+  display: inline;
+  justify-content: center;
+}
+
+h4 {
+  font-family: 'Open Sans Condensed';
+}
+
+
+nav {
+  display: flex;
+  background-color: #5f0f40;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.page {
+  justify-content: center;
+  display: grid;
+  grid-template: repeat(10, 50px) / repeat(19, 50px);
+  padding: 10px;
+  text-align: center;
+}
+
+.right {
+  font-family: 'Open Sans Condensed';
+  display: grid;
+  border: 2px solid #c0c0c0;
+  border-radius: 3px;
+  grid-area: 1 / 1 /span 10 / span 4;
+  background-color: #f8f9fa;
+}
+
+.search {
+  grid-area: 1 / 1 / span 3 / span 3;
+}
+
+.price {
+  display: grid;
+  justify-content: center;
+  padding: 4px;
+  border-top: 2px solid #c0c0c0;
+  border-bottom: 2px solid #c0c0c0;
+  grid-area: 4 / 1 / span 3 / span 3;
+}
+
+input[type="submit"] {
+  font-family: 'Open Sans Condensed';
+  font-weight: bold;
+}
+
+.size {
+  display: block;
+  justify-content: center;
+  grid-area: 8 / 1 / span 2 / span 3;
+}
+
+.dresses {
+  grid-area: 1 / 5 / span 4 / span 4;
+  position: relative;
+
+}
+
+.costumes {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+}
+
+
+img.dress {
+  width: 150px;
+  height: 200px;
+  padding: 3px;
+  transition: all .2s linear;
+  border: 2px solid #c0c0c0;
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+
+img.dress:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.t-shirt {
+  grid-area: 1 / 10 / span 4 / span 4;
+  position: relative;
+}
+
+.clotches {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+}
+
+img.shirt {
+  width: 200px;
+  height: 200px;
+  padding: 3px;
+  transition: all .2s linear;
+  border: 2px solid #c0c0c0;
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+img.shirt:hover {
+  transform: scale(1.1);
+  opacity: 0.4;
+  opacity: 1;
+}
+
+.jeans {
+  grid-area: 1 / 15 / span 4 / span 4;
+  position: relative;
+}
+
+img.w-jean {
+  width: 150px;
+  height: 200px;
+  padding: 3px;
+  transition: all .2s linear;
+  border: 2px solid #c0c0c0;
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+.pants {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+}
+
+img.w-jean:hover {
+  transform: scale(1.1);
+  opacity: 0.4;
+  opacity: 1;
+}
+
+.shoes {
+  grid-area: 6 / 6 / 9 / span 3;
+}
+
+img.dc {
+  width: 150px;
+  height: 150px;
+  transition: all .2s linear;
+  border: 2px solid #c0c0c0;
+  border-radius: 3px;
+}
+
+img.dc:hover {
+  transform: scale(1.1);
+}
+
+.hair {
+  grid-area: 6 / 10 / 9 / span 3;
+}
+
+img.garnier {
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  transition: all .2s linear;
+  border: 2px solid #c0c0c0;
+  border-radius: 3px;
+}
+
+img.garnier:hover {
+  transform: scale(1.1);
+}
+
+.skin {
+  grid-area: 6 / 14 / 9 / span 3;
+}
+
+img.nivea {
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  transition: all .2s linear;
+  border: 2px solid #c0c0c0;
+  border-radius: 3px;
+}
+
+img.nivea:hover {
+  transform: scale(1.1);
+}
+
+form.range-p {
+  display: flex;
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.size-i {
+
+  justify-content: space-around;
+}
+
+address {
+  width: 100%;
+  background-color: #5f0f40;
+  color: #FFE1A8;
+}
+
+p#phone::before {
+  content: "📞 ";
+}
+
+p#address::before {
+  content: "📍 ";
+}
