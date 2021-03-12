@@ -74,18 +74,18 @@ p {
 
 h1 {
   display: inline-flex;
-  font-family: 'Julius Sans One';
-  color: #5f0f40;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-family: 'Julius Sans One';
+  width: 300px;
+  height: 90px;
   border: 3px solid #5f0f40;
   border-radius: 1rem;
   margin: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  width: 300px;
-  height: 90px;
+  color: #5f0f40;
   background-color: white;
 }
 
@@ -101,25 +101,25 @@ h4 {
 
 nav {
   display: flex;
-  background-color: #5f0f40;
   justify-content: space-around;
   width: 100%;
+  background-color: #5f0f40;
 }
 
 .page {
-  justify-content: center;
   display: grid;
   grid-template: repeat(10, 50px) / repeat(19, 50px);
-  padding: 10px;
   text-align: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 .right {
-  font-family: 'Open Sans Condensed';
   display: grid;
+  grid-area: 1 / 1 /span 10 / span 4;
   border: 2px solid #c0c0c0;
   border-radius: 3px;
-  grid-area: 1 / 1 /span 10 / span 4;
+  font-family: 'Open Sans Condensed';
   background-color: #f8f9fa;
 }
 
@@ -129,11 +129,11 @@ nav {
 
 .price {
   display: grid;
+  grid-area: 4 / 1 / span 3 / span 3;
   justify-content: center;
   padding: 4px;
   border-top: 2px solid #c0c0c0;
   border-bottom: 2px solid #c0c0c0;
-  grid-area: 4 / 1 / span 3 / span 3;
 }
 
 input[type="submit"] {
@@ -150,7 +150,6 @@ input[type="submit"] {
 .dresses {
   grid-area: 1 / 5 / span 4 / span 4;
   position: relative;
-
 }
 
 .costumes {
@@ -166,10 +165,10 @@ img.dress {
   width: 150px;
   height: 200px;
   padding: 3px;
+  opacity: 0.5;
   transition: all .2s linear;
   border: 2px solid #c0c0c0;
   border-radius: 3px;
-  opacity: 0.5;
 }
 
 
@@ -297,7 +296,6 @@ form.range-p {
 }
 
 div.size-i {
-
   justify-content: space-around;
 }
 
