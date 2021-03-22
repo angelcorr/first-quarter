@@ -22,12 +22,14 @@ html {
 
 body {
   width: 700px;
+  max-width: 800px;
   height: 550px;
+  max-height: 600px;
   margin: 0 auto;
   display: grid;
   grid-template: repeat(5, 1fr) / repeat(8, 1fr);
   position: relative;
-  top: 50px;
+  top: 100px;
   border: 1px solid #a5a58d;
   border-radius: 40px;
   background-color: #e7e2e1ec;
@@ -35,6 +37,7 @@ body {
 
 h1 {
   font-family: 'Playfair Display';
+  color: #53534a;
 }
 
 nav {
@@ -56,11 +59,11 @@ a:hover {
 
 .anchor {
   display: grid;
-  grid-template-areas: "Basic"
-                       "Social"
-                       "Method"
-                       "Password"
-                       "Logout";
+  grid-template-areas: "basic"
+                       "social"
+                       "method"
+                       "password"
+                       "logout";
   grid-template-rows: repeat(5, 40px);
   flex-direction: column;
   max-height: 300px;
@@ -72,7 +75,7 @@ a:hover {
 }
 
 .basic {
-  grid-area: "Basic";
+  grid-area: basic;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +83,7 @@ a:hover {
 }
 
 .social {
-  grid-area: "Social";
+  grid-area: social;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +91,7 @@ a:hover {
 }
 
 .method {
-  grid-area: "Method";
+  grid-area: method;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +99,7 @@ a:hover {
 }
 
 .password {
-  grid-area: "Password";
+  grid-area: password;
   border-bottom: 1px solid #a5a58d;
   display: flex;
   justify-content: center;
@@ -104,7 +107,7 @@ a:hover {
 }
 
 .logout {
-  grid-area: "Logout";
+  grid-area: logout;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,12 +175,12 @@ input[type="date"] {
 
 .male {
   position: relative;
-  right: 17px;
+  right: 16px;
 }
 
 label[for="Male"] {
   position: relative;
-  right: 17px;
+  right: 16px;
 }
 
 .no-gender {
@@ -190,7 +193,8 @@ label[for="No-gender"] {
   left: 8px;
 }
 
-button {
+button,
+input[type="submit"] {
   position: relative;
   top: 20px;
   font-family: 'Old Standard TT';
@@ -210,7 +214,7 @@ button {
   transform: scale(1.1);
 }
 
-.submit {
+input[type="submit"] {
   position: relative;
   left: 15px;
   color: #53534a;
@@ -218,6 +222,6 @@ button {
   transform: background-color 400ms linear;
 }
 
-.submit:hover {
+input[type="submit"]:hover {
   transform: scale(1.1);
 }
