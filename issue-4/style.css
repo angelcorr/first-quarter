@@ -13,19 +13,21 @@ h1 {
 }
 
 hr {
-  width: 1600px;
-  position: relative;
-  top: 25px;
+  width: 1400px;
+  margin-top: 25px;
+  margin-bottom: 5px;
 }
 
 main {
+  height: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 div.grid {
-  width: 900px;
-  height: 900px;
+  width: 860px;
+  height: 940px;
   display: grid;
   gap: 9px 9px;
   grid-template: repeat(13, 64px) / repeat(11, 70px);
@@ -39,18 +41,17 @@ div.grid {
 }
 
 .one img {
-  width: 231px;
-  height: 286px;
+  width: 229px;
+  height: 285px;
   border-radius: 10px;
 }
-
 
 .two {
   grid-area: 2 / 5 / span 2 / span 3;
 }
 
 .two img {
-  width: 230px;
+  width: 229px;
   height: 138px;
   border-radius: 10px;
 }
@@ -60,8 +61,8 @@ div.grid {
 }
 
 .three img {
-  width: 231px;
-  height: 212px;
+  width: 229px;
+  height: 211px;
   border-radius: 10px;
 }
 
@@ -70,7 +71,7 @@ div.grid {
 }
 
 .four img {
-  width: 231px;
+  width: 229px;
   height: 138px;
   border-radius: 10px;
 }
@@ -100,8 +101,8 @@ div.grid {
 }
 
 .seven img {
-  width: 231px;
-  height: 213px;
+  width: 229px;
+  height: 211px;
   border-radius: 10px;
 }
 
@@ -131,7 +132,7 @@ div.grid {
 
 .ten img {
   width: 229px;
-  height: 139px;
+  height: 138px;
   border-radius: 10px;
 }
 
@@ -140,8 +141,8 @@ div.grid {
 }
 
 .eleven img {
-  width: 230px;
-  height: 212px;
+  width: 229px;
+  height: 211px;
   border-radius: 10px;
 }
 
@@ -150,7 +151,7 @@ div.grid {
 }
 
 .twelve img {
-  width: 230px;
+  width: 229px;
   height: 283px;
   border-radius: 10px;
 }
