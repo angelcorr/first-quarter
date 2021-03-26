@@ -17,17 +17,26 @@
 }
 
 html {
-  background-color: #03055e4f;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #03055e4f;
+}
+
+main {
   width: 700px;
-  max-width: 800px;
+  max-width: 700px;
   height: 550px;
   max-height: 600px;
   margin: 0 auto;
   display: grid;
-  grid-template: repeat(5, 1fr) / repeat(8, 1fr);
+  grid-template: repeat(9, 1fr) / repeat(9, 1fr);
   position: relative;
   top: 100px;
   border: 1px solid #a5a58d;
@@ -35,13 +44,19 @@ body {
   background-color: #e7e2e1ec;
 }
 
-h1 {
-  font-family: 'Playfair Display';
-  color: #53534a;
+nav {
+  grid-area: 2 / 2 / span 7 / span 3 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-nav {
-  grid-area: 2 / 2 / span 3 / span 2 ;
+img {
+  grid-area: 2 / 2 / span 3 / span 3;
+  width: 170px;
+  height: 170px;
+  border: 1px solid #a5a58d;
+  border-radius: 50%;
 }
 
 a {
@@ -50,7 +65,6 @@ a {
   color: inherit;
   color: #53534a;
   text-decoration: none;
-  transform: color 400ms linear;
 }
 
 a:hover {
@@ -59,6 +73,7 @@ a:hover {
 
 .anchor {
   display: grid;
+  grid-area: 5 / 2 / span 4 / span 2;
   grid-template-areas: "basic"
                        "social"
                        "method"
@@ -66,12 +81,12 @@ a:hover {
                        "logout";
   grid-template-rows: repeat(5, 40px);
   flex-direction: column;
+  width: 100%;
   max-height: 300px;
-  position: relative;
-  bottom: 20px;
   text-align: center;
   border: 1px solid #a5a58d;
   border-radius: 30px;
+  margin-top: 9px;
 }
 
 .basic {
@@ -113,27 +128,20 @@ a:hover {
   align-items: center;
 }
 
-img {
-  width: 170px;
-  height: 170px;
-  position: relative;
-  bottom: 40px;
-  border: 1px solid #a5a58d;
-  border-radius: 50%;
-}
-
-main {
-  grid-area: 2 / 5 / span 3 / span 3;
-  position: relative;
-  bottom: 30px;
+form {
+  grid-area: 2 / 6 / span 7 / span 3;
   text-align: center;
   font-family: 'Old Standard TT';
+}
+
+h1 {
+  font-family: 'Playfair Display';
+  color: #53534a;
 }
 
 label {
   font-size: 17px;
   color: #001524c7;
-  transform: color 400ms linear;
 }
 
 label:hover {
@@ -152,11 +160,6 @@ input[type="text"] {
   background-color: #e7e2e1ec;
 }
 
-.birthday {
-  position: relative;
-  top: 5px;
-}
-
 input[type="date"] {
   padding: 5px;
   font-family: 'Old Standard TT';
@@ -167,61 +170,43 @@ input[type="date"] {
   border-radius: 4px;
 }
 
-.select {
-  position: relative;
-  top: 10px;
-  color: #53534a;
+label {
+  font-size: 20px;
 }
 
 .male {
   position: relative;
-  right: 16px;
+  right: 19px;
 }
 
 label[for="Male"] {
   position: relative;
-  right: 16px;
+  right: 19px;
 }
 
 .no-gender {
   position: relative;
-  left: 8px;
+  left: 9px;
 }
 
 label[for="No-gender"] {
   position: relative;
-  left: 8px;
+  left: 9px;
 }
 
-button,
-input[type="submit"] {
-  position: relative;
-  top: 20px;
+button {
   font-family: 'Old Standard TT';
-  font-size: 19px;
+  font-size: 24px;
   background-color: inherit;
   border: none;
+  color: #53534a;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 .cancel {
   position: relative;
   right: 15px;
-  color: #53534a;
-  transform: background-color 400ms linear;
-}
-
-.cancel:hover {
-  transform: scale(1.1);
-}
-
-input[type="submit"] {
-  position: relative;
-  left: 15px;
-  color: #53534a;
-  transform: all 400ms linear;
-  transform: background-color 400ms linear;
-}
-
-input[type="submit"]:hover {
-  transform: scale(1.1);
 }
