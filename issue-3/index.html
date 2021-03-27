@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <title>Connectone</title>
+</head>
+<body>
+  <main>
+    <nav>
+      <img src="./espantapajaros.jpg" alt="Image">
+      <div class="anchor">
+        <a href="" class="basic">Basic Info</a>
+        <a href="" class="social">Social</a>
+        <a href="" class="method">Payment Method</a>
+        <a href="" class="password">Password</a>
+        <a href="" class="logout">Logout</a>
+      </div>
+    </nav>
+    <form action="" method="GET">
+      <h1>Subscribe</h1>
+      <section class="name">
+          <input type="text" name="name" id="name" placeholder="Full name" required>
+      </section>
+      <br>
+      <section class="info">
+        <input type="text" name="information" id="information" placeholder="Related Info" required>
+      </section>
+      <br>
+      <section class="birthday">
+        <input type="date" name="birthday" required>
+      </section>
+      <br>
+      <section class="select">
+        <input type="radio" id="Male" name="gender" valu="Male" class="male" required>
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="gender" value="Female" required>
+        <label for="Female">Female</label>
+        <br>
+        <input type="radio" id="Trans" name="gender" value="Trans" required>
+        <label for="Trans">Trans</label>
+        <input type="radio" id="No-gender" name="gender" value="No-gender" class="no-gender" required>
+        <label for="No-gender">No gender</label>
+      </section>
+      <br>
+      <button class="cancel">Cancel</button>
+      <button class="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
